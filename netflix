@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-if [ $1 = 'bye' ];
+if [ "$1" = 'bye' ];
 then 
    echo "bye bye"
    hue lights all off
