@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
-open -a Safari https://netflix.com/browse 
-hue lights 5 on
-hue lights 5 =100
-hue lights 5 ff7d1e
-hue lights 1,2 off
+if [ $1 = 'bye' ];
+then 
+   echo "bye bye"
+   hue lights all off
+else
+   echo 'The Office?'
+   open -a Safari https://netflix.com/browse 
+   hue lights 5 on
+   hue lights 5 =100
+   hue lights 5 ff7d1e
+   hue lights 1,2 off
+fi
