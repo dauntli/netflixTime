@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-open -a Safari https://netflix.com/browse & 
+open -a Safari https://netflix.com/browse 
 hue lights 5 on
 hue lights 5 =100
 hue lights 5 ff7d1e
